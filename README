@@ -1,0 +1,36 @@
+Orion is a modern light theme for Gnome. It supports Gnome, Unity, Pantheon, XFCE and Openbox. The theme is compatible with GTK 3.6. It also includes a GTK 2.0 theme using Murrine engine.
+
+---
+
+Ubuntu users can install Orion from our themes PPA using the following commands,
+
+sudo add-apt-repository ppa:satyajit-happy/themes
+sudo apt-get update && sudo apt-get install orion-gtk-theme
+
+---
+
+Installation Instructions for other distros:
+
+Extract the zip file to the themes directory i.e. "~/.themes/" or "/usr/share/themes/"
+
+Use Gnome Tweak tool to choose the theme, or run the following commands in Terminal,
+
+gsettings set org.gnome.desktop.interface gtk-theme "Orion"
+
+gsettings set org.gnome.desktop.wm.preferences theme "Orion"
+
+---
+
+Note:
+
+For older GTK versions, download the theme from launchpad,
+
+GTK3.4: https://launchpad.net/~satyajit-happy/+archive/themes/+files/orion-gtk-theme_2012.06.16-0~satya164~precise.tar.gz (Unico engine required)
+
+GTK3.2: https://launchpad.net/~satyajit-happy/+archive/themes/+files/orion-gtk-theme_2012.02.03-0~satya164~oneiric.tar.gz (Unico engine required)
+
+This theme is not compatible with old Gnome 3.0.
+
+---
+
+License: GPL-3.0+

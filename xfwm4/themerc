@@ -1,0 +1,18 @@
+# Name: Orion xfwm4 theme
+# Author: Satyajit Sahoo
+# License: GPL
+# Date: 27 January 2012
+
+active_text_color=#333
+inactive_text_color=#999
+button_offset=6
+button_spacing=1
+full_width_title=true
+maximized_offset=0
+show_app_icon=false
+title_horizontal_offset=6
+title_shadow_active=false
+title_shadow_inactive=false
+title_vertical_offset_active=3
+title_vertical_offset_inactive=3
+button_layout=O|HMC
