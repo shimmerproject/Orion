@@ -3,7 +3,7 @@ static char * bottom_active_xpm[] = {
 "8 21 3 1",
 " 	c None",
 ".	c #EEEEEE",
-"+	c #CCCCCC",
+"+	c #BDBDBD",
 "........",
 "++++++++",
 "        ",

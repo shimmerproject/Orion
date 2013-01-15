@@ -1,5 +1,5 @@
 /* XPM */
-static char * hide_active_xpm[] = {
+static char * shade_toggled_active_xpm[] = {
 "16 16 34 1",
 " 	c None",
 ".	c #C0C0C0",
