@@ -119,13 +119,19 @@ GtkWindow {
 .button,
 .primary-toolbar .button,
 .progressbar,
-.menubar.menuitem:hover,
-.menubar .menuitem:hover,
+.menuitem:hover,
 row:selected {
     box-shadow: inset 1px 0 alpha(@light_shadow, 0.10),
                 inset 0 1px alpha(@light_shadow, 0.10),
                 inset -1px 0 alpha(@light_shadow, 0.10),
                 inset 0 -1px alpha(@light_shadow, 0.10);
+}
+
+.menu {
+    box-shadow: inset 1px 0 alpha(@light_shadow, 0.90),
+                inset 0 1px alpha(@light_shadow, 0.90),
+                inset -1px 0 alpha(@light_shadow, 0.90),
+                inset 0 -1px alpha(@light_shadow, 0.90);
 }
 
 .button:active,
@@ -1103,6 +1109,7 @@ GtkLevelBar.vertical {
 
 .level-bar.trough {
     padding: 2px;
+    border-radius: 2px;
 }
 
 .level-bar.fill-block {
@@ -1289,7 +1296,7 @@ GtkScale.trough.vertical:insensitive,
 .scrollbar.slider {
     border-width: 3px;
     border-color: transparent;
-    border-radius: 15px;
+    border-radius: 7px;
     background-color: shade(@theme_bg_color, 0.7);
 }
 
