@@ -102,11 +102,17 @@
 
 <!-- ::: TITLEBAR ::: -->
 <draw_ops name="titlebar_gradient">
-	<rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height" filled="true" />
+	<gradient type="vertical" x="0" y="0" width="width" height="title_height">
+	<color value="shade/gtk:bg[NORMAL]/1.05" />
+	<color value="shade/gtk:bg[NORMAL]/1.00" />
+	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_gradient_unfocused">
-	<rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height" filled="true" />
+	<gradient type="vertical" x="0" y="0" width="width" height="title_height">
+	<color value="shade/gtk:bg[NORMAL]/1.02" />
+	<color value="shade/gtk:bg[NORMAL]/1.00" />
+	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_maximized">

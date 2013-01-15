@@ -111,7 +111,10 @@
 </draw_ops>
 
 <draw_ops name="titlebar_fill_focused">
-	<rectangle color="gtk:custom(wm_bg,gtk:bg[NORMAL])" x="0" y="0" width="width" height="height" filled="true" />
+	<gradient type="vertical" x="0" y="0" width="width" height="title_height">
+	<color value="shade/gtk:custom(wm_bg,gtk:bg[NORMAL])/1.05" />
+	<color value="shade/gtk:custom(wm_bg,gtk:bg[NORMAL])/1.00" />
+	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_fill_attached_focused">
@@ -119,7 +122,10 @@
 </draw_ops>
 
 <draw_ops name="titlebar_fill_unfocused">
-	<rectangle color="gtk:custom(wm_bg,gtk:bg[NORMAL])" x="0" y="0" width="width" height="height" filled="true" />
+	<gradient type="vertical" x="0" y="0" width="width" height="title_height">
+	<color value="shade/gtk:custom(wm_bg,gtk:bg[NORMAL])/1.02" />
+	<color value="shade/gtk:custom(wm_bg,gtk:bg[NORMAL])/1.00" />
+	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_focused">
