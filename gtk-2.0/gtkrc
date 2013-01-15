@@ -1,3 +1,7 @@
+# Name: Orion
+# Author: Satyajit Sahoo <satyajit.happy@gmail.com>
+# License: GPL-3.0+
+
 gtk-color-scheme = "base_color:#fff\nfg_color:#444\ntooltip_fg_color:#fff\nselected_bg_color:#569be4\nselected_fg_color:#fff\ntext_color:#333\nbg_color:#eee\ntooltip_bg_color:#000\nlink_color:#569be4"
 
 gtk-icon-sizes = "panel-menu=22,22:gtk-button=16,16"
