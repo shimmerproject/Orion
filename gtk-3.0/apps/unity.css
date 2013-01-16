@@ -22,10 +22,10 @@ UnityPanelWidget,
 
 .unity-panel.menubar.menuitem:hover,
 .unity-panel.menubar .menuitem *:hover {
-    border-color: shade(@panel_bg_color, 0.7);
+    border-color: shade(@panel_bg_color, 0.8);
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(@panel_bg_color, 0.97)),
-                                     to (shade(@panel_bg_color, 0.82)));
+                                     from (shade(shade(@panel_bg_color, 1.02), 0.9)),
+                                     to (shade(shade(@panel_bg_color, 1.02), 0.95)));
 
     color: @panel_fg_color;
 }

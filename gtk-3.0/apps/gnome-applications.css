@@ -62,10 +62,10 @@ PanelApplet .button {
 PanelApplet .button:active {
     border-width: 0 1px;
     border-radius: 0;
-    border-color: shade(@menu_bg_color, 0.8);
+    border-color: shade(@panel_bg_color, 0.8);
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(shade(@menu_bg_color, 1.02), 0.9)),
-                                     to (shade(shade(@menu_bg_color, 1.02), 0.95)));
+                                     from (shade(shade(@panel_bg_color, 1.02), 0.9)),
+                                     to (shade(shade(@panel_bg_color, 1.02), 0.95)));
 }
 
 PanelApplet .button:prelight {
@@ -76,10 +76,10 @@ PanelApplet .button:prelight {
 }
 
 PanelApplet .button:active:prelight {
-    border-color: shade(@menu_bg_color, 0.8);
+    border-color: shade(@panel_bg_color, 0.8);
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(shade(@menu_bg_color, 1.02), 1.0)),
-                                     to (shade(shade(@menu_bg_color, 1.02), 1.05)));
+                                     from (shade(shade(@panel_bg_color, 1.02), 1.0)),
+                                     to (shade(shade(@panel_bg_color, 1.02), 1.05)));
 }
 
 WnckPager, WnckTasklist {
