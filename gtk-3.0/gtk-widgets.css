@@ -1659,12 +1659,7 @@ GtkTextView {
  ***********/
 .toolbar {
     padding: 2px;
-    border-width: 1px 0 0 0;
-    border-style: solid;
-    border-color: shade(@toolbar_bg_color, 0.8);
-    background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(@toolbar_bg_color, 0.96)),
-                                     to (shade(@toolbar_bg_color, 0.94)));
+    border-style: none;
 }
 
 /* primary-toolbar */
