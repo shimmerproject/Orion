@@ -37,17 +37,15 @@ style "default" {
 	GtkScrollbar::activate-slider = 1
 	GtkScrollbar::trough-border = 3
 	GtkScrollbar::slider-width = 9
-	GtkScrollbar::min-slider-length = 31
+	GtkScrollbar::min-slider-length = 100
 	GtkScrollbar::has-backward-stepper = 0
 	GtkScrollbar::has-forward-stepper = 0
 	GtkScrollbar::has-secondary-backward-stepper = 0
 	GtkScrollbar::has-secondary-forward-stepper = 0
 
 	GtkMenuBar::internal-padding = 0
-	GtkMenuBar::shadow-type = GTK_SHADOW_NONE
 	GtkExpander::expander-size = 11
 	GtkToolbar::internal-padding = 1
-	GtkToolbar::shadow-type = GTK_SHADOW_NONE
 	GtkTreeView::expander-size = 7
 	GtkTreeView::vertical-separator = 0
 	GtkTreeView::odd-row-color = shade (0.96, @base_color)
@@ -117,7 +115,7 @@ style "default" {
 		progressbarstyle = 0
 		colorize_scrollbar = FALSE
 		menubaritemstyle = 1
-		menubarstyle = 3
+		menubarstyle = 0
 		menustyle = 3
 		roundness = 2
 		sliderstyle = 0
@@ -164,7 +162,6 @@ style "button" {
 	engine "murrine" {
 		#contrast = 1.0
 		border_shades = {1.0, 0.9}
-		textstyle = 1
 		glowstyle = 5
 		glow_shade = 1.1
 		#text_shade = 1.04
@@ -183,7 +180,6 @@ style "notebook_button" {
 
 	engine "murrine" {
 		#contrast = 1.0
-		textstyle = 1
 		border_shades = {0.95, 0.88}
 		glowstyle = 5
 		glow_shade = 1.02
@@ -208,7 +204,7 @@ style "scrollbar" = "button" {
 
 	engine "murrine"
 	{
-		roundness = 3
+		roundness = 7
 		border_shades = { 1.2, 1.2  }
 		gradient_shades = { 0.7, 0.7, 0.7, 0.7 }
 		trough_shades = { 1.0, 1.0 }
@@ -280,7 +276,6 @@ style "comboboxentry" = "notebook_button" {
 	ythickness = 3
 	
 	engine "murrine" {
-		textstyle = 1
 		glowstyle = 5
 		glow_shade = 1.02
 	}
@@ -294,14 +289,16 @@ style "menubar" {
 	engine "murrine" {
 		gradient_shades = {1.0, 1.0, 1.0, 1.0}
 		lightborder_shade = 1.0
+		border_shades = { 0.8, 0.8 }
 	}
 }
 
 style "toolbar" {
+	bg[NORMAL] = shade (0.95, @bg_color)
+
 	engine "murrine" {
-		textstyle = 1
-		text_shade = 1.32
 		lightborder_shade = 1.0
+		border_shades = { 0.8, 0.8 }
 	}
 }
 
@@ -342,9 +339,9 @@ style "menu_item" = "menu" {
 
 style "menubar_item" = "menu" {
 	xthickness = 2
-	ythickness = 3
+	ythickness = 2
 
-	bg[PRELIGHT] = @bg_color
+	bg[PRELIGHT] = shade (0.9, @bg_color)
 	fg[PRELIGHT] = @fg_color
 	fg[SELECTED] = @fg_color
 	fg[ACTIVE] = @fg_color
@@ -356,7 +353,7 @@ style "menubar_item" = "menu" {
 		glow_shade = 1.00
 		lightborderstyle = 3
 		lightborder_shade = 1.2
-		roundness = 2
+		roundness = 0
 	}
 }
 
@@ -447,7 +444,6 @@ style "treeview_header" = "notebook_button" {
 		glazestyle = 1
 		contrast = 0.8
 		lightborder_shade = 1.16
-		textstyle = 1
 		glow_shade = 1.0
 	}
 }
@@ -473,7 +469,6 @@ style "radiocheck"  = "button" {
 		reliefstyle = 3
 		gradient_shades = {1.2, 1.0, 1.0, 0.9}
 		shadow_shades = {0.6, 0.5}
-		textstyle = 0
 	}
 }
 
