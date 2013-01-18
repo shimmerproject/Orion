@@ -56,7 +56,7 @@
     background-color: @theme_base_color;
 }
 
-.content-view-window {    
+.content-view-window {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);    
@@ -242,7 +242,7 @@ GraniteWidgetsPopOver .entry {
 .composited-indicator,
 .wingpanel-app-button, 
 .wingpanel-indicator-button {
-    padding: 0 3px;
+    padding: 0 2px;
     background-color: transparent;
     color: #fff;
 }

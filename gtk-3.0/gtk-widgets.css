@@ -122,7 +122,6 @@ GtkWindow {
 
 /* inset shadow */
 .button,
-.primary-toolbar .button,
 .progressbar,
 .menuitem:hover,
 row:selected {
@@ -206,8 +205,6 @@ GtkAssistant .sidebar {
     border-width: 0;
     background-color: @theme_bg_color;
 }
-
-
 
 /**********
  * button *
@@ -948,7 +945,7 @@ GtkTreeMenu .menuitem * {
     background-color: transparent;
 }
 
-.menuitem .button {
+.menuitem GtkCalendar.button {
     border-style: none;
     background-color: transparent;
     background-image: none;
