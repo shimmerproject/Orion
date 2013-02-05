@@ -4,6 +4,7 @@
 
 style "ff-default" {
 	GtkCheckButton::indicator-size = 14
+	GtkScrollbar::trough-border = 3
 }
 
 style	"ff-statusbar" {
