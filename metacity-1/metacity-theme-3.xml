@@ -68,7 +68,7 @@
 	<border name="button_border" left="0" right="0" top="0" bottom="0" />
 </frame_geometry>
 
-<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="false" rounded_top_right="false" parent="small">
+<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="2" rounded_top_right="2" rounded_bottom_right="2" rounded_bottom_left="2" parent="small">
 	<distance name="title_vertical_pad" value="2" />
 </frame_geometry>
 
