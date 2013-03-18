@@ -1,6 +1,6 @@
 /* XPM */
 static char * shade_toggled_prelight_xpm[] = {
-"16 16 32 1",
+"16 17 32 1",
 " 	c None",
 ".	c #9179D1",
 "+	c #FAF7FD",
@@ -48,4 +48,5 @@ static char * shade_toggled_prelight_xpm[] = {
 "(<<<<<<<<<<<<<<[",
 "(}|||||||||||||[",
 "1([[[[[[[[[[[[[2",
-"3333333333333333"};
+"3333333333333333",
+"                "};
