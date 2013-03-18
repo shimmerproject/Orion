@@ -1,9 +1,11 @@
 style "sidepane"
 {
 	base[NORMAL]		= @bg_color
+	base[ACTIVE]		= @selected_bg_color
 	base[INSENSITIVE]	= @bg_color
 	
-	bg[NORMAL]		= @bg_color (0.92,@base_color)
+	text[ACTIVE]		= @selected_fg_color
+	bg[NORMAL]		= @bg_color
 	bg[PRELIGHT]		= shade (1.5,@selected_bg_color)
 }
 
