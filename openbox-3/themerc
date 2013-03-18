@@ -14,7 +14,7 @@ menu.title.text.justify: Center
 menu.items.bg: Flat Solid
 menu.items.bg.color: #eeeeee
 menu.items.text.color: #333333
-menu.items.disable.text.color: #999999
+menu.items.disabled.text.color: #999999
 
 menu.items.active.bg: Flat Gradient Vertical
 menu.items.active.bg.color: #67acf5
