@@ -758,7 +758,5 @@ widget_class "*MozContainer*"		style "performance-fix" # Firefox (Not sure if th
 include "apps/banshee.rc"
 include "apps/chromium.rc"
 include "apps/ff.rc"
-include "apps/gnome-panel.rc"
-include "apps/gnome-terminal.rc"
-include "apps/nautilus.rc"
+include "apps/panel.rc"
 include "apps/thunar.rc"
