@@ -2,21 +2,21 @@
 # Author: Satyajit Sahoo <satyajit.happy@gmail.com>
 # License: GPL-3.0+
 
+
 ### Menu
 menu.border.color: #cccccc
 
-menu.title.bg: Flat Solid
+menu.title.bg: flat solid
 menu.title.bg.color: #eeeeee
-menu.title.bg.border.color: #eeeeee
 menu.title.text.color: #333333
-menu.title.text.justify: Center
+menu.title.text.justify: center
 
-menu.items.bg: Flat Solid
+menu.items.bg: flat solid
 menu.items.bg.color: #eeeeee
 menu.items.text.color: #333333
 menu.items.disabled.text.color: #999999
 
-menu.items.active.bg: Flat Gradient Vertical
+menu.items.active.bg: flat gradient vertical
 menu.items.active.bg.color: #67acf5
 menu.items.active.bg.colorTo: #458ad3
 menu.items.active.text.color: #ffffff
@@ -27,79 +27,111 @@ menu.separator.padding.width: 2
 menu.separator.padding.height: 4
 
 
-### Window active
-window.active.title.bg: Flat Border Gradient Vertical
+### Active window
+window.active.border.color: #aaaaaa
+
+window.active.title.bg: flat border gradient vertical
 window.active.title.bg.color: #f0f0f0
 window.active.title.bg.colorTo: #eeeeee
 window.active.title.bg.border.color: #eeeeee
 window.active.title.separator.color: #eeeeee
 window.active.text.justify: center
 
-window.active.label.bg: Parentrelative
+window.active.label.bg: parentrelative
 window.active.label.text.color: #333333
 
-window.active.handle.bg: Flat Border Solid
+window.active.handle.bg: flat border solid
 window.active.handle.bg.color: #eeeeee
 window.active.handle.bg.border.color: #eeeeee
 
-window.active.grip.bg: Flat Border Solid
+window.active.grip.bg: flat border solid
 window.active.grip.bg.color: #cccccc
 window.active.grip.bg.border.color: #cccccc
 
-window.active.button.unpressed.bg: Flat Border Gradient Vertical
+window.active.button.unpressed.bg: flat border gradient vertical
 window.active.button.unpressed.bg.color: #fcfcfc
 window.active.button.unpressed.bg.colorTo: #ececec
 window.active.button.unpressed.bg.border.color: #aaaaaa
 window.active.button.unpressed.image.color: #999999
 
-window.active.button.pressed.bg: Flat Border Gradient Vertical
+window.active.button.pressed.bg: flat border gradient vertical
 window.active.button.pressed.bg.color: #cfcfcf
 window.active.button.pressed.bg.colorTo: #ececec
 window.active.button.pressed.bg.border.color: #aaaaaa
 window.active.button.pressed.image.color: #999999
 
-window.active.button.disabled.bg: Flat Border Gradient Vertical
+window.active.button.disabled.bg: flat border gradient vertical
 window.active.button.disabled.bg.color: #eeeeee
 window.active.button.disabled.bg.colorTo: #eeeeee
 window.active.button.disabled.bg.border.color: #cccccc
 window.active.button.disabled.image.color: #cccccc
 
 
-### Window inactive
-window.inactive.title.bg: Flat Border Gradient Vertical
+### Inactive window
+window.inactive.border.color: #cccccc
+
+window.inactive.title.bg: flat border gradient vertical
 window.inactive.title.bg.color: #eeeeee
 window.inactive.title.bg.colorTo: #eeeeee
 window.inactive.title.bg.border.color: #eeeeee
 window.inactive.title.separator.color: #eeeeee
 
-window.inactive.label.bg: Parentrelative
+window.inactive.label.bg: parentrelative
 window.inactive.label.text.color: #999999
 
-window.inactive.handle.bg: Flat Border Solid
+window.inactive.handle.bg: flat border solid
 window.inactive.handle.bg.color: #eeeeee
 window.inactive.handle.bg.border.color: #eeeeee
 
-window.inactive.grip.bg: Flat Border Solid
+window.inactive.grip.bg: flat border solid
 window.inactive.grip.bg.color: #cccccc
 window.inactive.grip.bg.border.color: #cccccc
 
-window.inactive.button.unpressed.bg: Flat Border Gradient Vertical
+window.inactive.button.unpressed.bg: flat border gradient vertical
 window.inactive.button.unpressed.bg.color: #ececec
 window.inactive.button.unpressed.bg.colorTo: #ececec
 window.inactive.button.unpressed.bg.border.color: #aaaaaa
 window.inactive.button.unpressed.image.color: #aaaaaa
 
-window.inactive.button.pressed.bg: Flat Border Gradient Vertical
+window.inactive.button.pressed.bg: flat border gradient vertical
 window.inactive.button.pressed.bg.color: #cfcfcf
 window.inactive.button.pressed.bg.colorTo: #ececec
 window.inactive.button.pressed.bg.border.color: #aaaaaa
 window.inactive.button.pressed.image.color: #aaaaaa
 
-window.inactive.button.disabled.bg: Flat Border Gradient Vertical
+window.inactive.button.disabled.bg: flat border gradient vertical
 window.inactive.button.disabled.bg.color: #eeeeee
 window.inactive.button.disabled.bg.colorTo: #eeeeee
 window.inactive.button.disabled.bg.border.color: #cccccc
 window.inactive.button.disabled.image.color: #cccccc
+
+
+# OSD
+osd.border.color: #cccccc
+
+osd.bg: flat border solid
+osd.bg.color: #eeeeee
+osd.bg.border.color: #cccccc
+
+osd.label.bg: flat border solid
+osd.label.bg.color: #eeeeee
+osd.label.bg.border.color: #eeeeee
+osd.label.text.color: #333333
+
+osd.hilight.bg: flat border solid
+osd.hilight.bg.color: #569be4
+osd.hilight.bg.border.color: #569be4
+
+osd.unhilight.bg: flat border solid
+osd.unhilight.bg.color: #cccccc
+osd.unhilight.bg.border.color: #cccccc
+
+
+### Fonts
+window.active.label.text.font:shadow=n
+window.inactive.label.text.font:shadow=n
+menu.items.font:shadow=n
+menu.title.text.font:shadow=n
 
 
 ### Everything else
@@ -108,11 +140,3 @@ padding.width: 2
 window.handle.width: 4
 window.client.padding.width: 0
 window.label.text.justify: center
-window.active.border.color: #aaaaaa
-window.inactive.border.color: #cccccc
-
-### Fonts
-window.active.label.text.font:shadow=n
-window.inactive.label.text.font:shadow=n
-menu.items.font:shadow=n
-menu.title.text.font:shadow=n
