@@ -1,4 +1,4 @@
-Orion is a modern light theme for Gnome. It supports Gnome, Unity, Pantheon, XFCE and Openbox. The theme is compatible with GTK 3.6. It also includes a GTK 2.0 theme using Murrine engine.
+Orion is a modern light theme for Gnome. It supports Gnome, Unity, XFCE and Openbox. The theme is compatible with GTK 3.6 and 3.8. It also includes a GTK 2.0 theme using Murrine engine.
 
 ---
 
@@ -30,6 +30,12 @@ GTK3.4: https://launchpad.net/~satyajit-happy/+archive/themes/+files/orion-gtk-t
 GTK3.2: https://launchpad.net/~satyajit-happy/+archive/themes/+files/orion-gtk-theme_2012.02.03-0~satya164~oneiric.tar.gz (Unico engine required)
 
 This theme is not compatible with old Gnome 3.0.
+
+---
+
+Credits:
+
+Window theme based on Plastico http://fav.me/d6835ev by Camilo Higuita http://kxmylo.deviantart.com/
 
 ---
 
