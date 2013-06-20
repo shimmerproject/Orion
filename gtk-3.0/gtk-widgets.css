@@ -592,7 +592,7 @@ column-header .button:hover,
 column-header .button:active:hover,
 column-header .button:hover:focus,
 column-header .button:active:hover:focus {
-    border-color: shade(@theme_bg_color, 0.8);
+    border-color: shade(@theme_bg_color, 0.9);
     border-bottom-color: shade(@theme_bg_color, 0.7);
 }
 
@@ -2178,7 +2178,10 @@ GtkColorButton.button {
 
 .primary-toolbar .entry:active,
 .primary-toolbar .entry:focus {
-    border-color: shade(@theme_selected_bg_color, 0.8);
+    border-top-color: shade(@toolbar_bg_color, 0.6);
+    border-right-color: shade(@toolbar_bg_color, 0.66);
+    border-left-color: shade(@toolbar_bg_color, 0.66);
+    border-bottom-color: shade(@toolbar_bg_color, 0.7);
 }
 
 /* inline-toolbar */
