@@ -261,6 +261,7 @@ style "notebook" {
 	ythickness = 2
 	
 	engine "murrine" {
+		contrast = 1.0
 		roundness = 2
 		gradient_shades = {1.0, 1.0, 1.0, 1.0}
 	}
