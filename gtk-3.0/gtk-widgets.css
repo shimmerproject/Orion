@@ -2098,10 +2098,7 @@ GtkColorButton.button {
 }
 
 .primary-toolbar GtkComboBox,
-.primary-toolbar GtkComboBox .cell,
-.primary-toolbar .button *,
-.primary-toolbar .button,
-.toolbar GtkComboBox .cell {
+.primary-toolbar .button {
     padding: 2px;
     border-width: 1px;
     border-color: transparent;
