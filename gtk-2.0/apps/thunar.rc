@@ -1,5 +1,4 @@
-style "sidepane"
-{
+style "sidepane" {
 	base[NORMAL]		= @bg_color
 	base[ACTIVE]		= @selected_bg_color
 	base[INSENSITIVE]	= @bg_color

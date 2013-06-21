@@ -9,8 +9,7 @@ style "chromium_toolbar_button" {
 	}
 }
 
-style "chrome-gtk-frame"
-{
+style "chrome-gtk-frame" {
 	ChromeGtkFrame::frame-color = @bg_color
 	ChromeGtkFrame::inactive-frame-color = @bg_color
 
