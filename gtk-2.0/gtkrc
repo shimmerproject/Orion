@@ -36,12 +36,15 @@ style "default" {
 
 	GtkScrollbar::activate-slider = 1
 	GtkScrollbar::trough-border = 1
-	GtkScrollbar::slider-width = 7
+	GtkScrollbar::slider-width = 9
 	GtkScrollbar::min-slider-length = 100
-	GtkScrollbar::has-backward-stepper = 1
-	GtkScrollbar::has-forward-stepper = 1
+	GtkScrollbar::has-backward-stepper = 0
+	GtkScrollbar::has-forward-stepper = 0
 	GtkScrollbar::has-secondary-backward-stepper = 0
 	GtkScrollbar::has-secondary-forward-stepper = 0
+
+	GtkScrolledWindow::scrollbar-spacing = 0
+	GtkScrolledWindow::scrollbars-within-bevel = 1
 
 	GtkMenuBar::internal-padding = 0
 	GtkExpander::expander-size = 11
@@ -197,28 +200,21 @@ style "spinbutton" = "notebook_button" {
 }
 
 style "scrollbar" = "button" {
-
 	GtkScrollbar::stepper-size	= 0
 	GtkScrollbar::arrow-scaling	= 0.0
 
-
-	bg[NORMAL] = shade (0.8, @bg_color)
-	bg[PRELIGHT] = shade (0.6, @bg_color)
-	bg[ACTIVE] = @selected_bg_color
-
+	bg[NORMAL] = @bg_color
+	bg[PRELIGHT] = shade (0.8, @bg_color)
+	bg[ACTIVE] = shade (1.4, @selected_bg_color)
+	
 	engine "murrine" {
-		roundness		= 7
-		gradient_shades		= {1.0,1.0,1.0,1.0}
-		highlight_shade		= 1.0
-		glow_shade		= 0.95
-		reliefstyle		= 2
-		gradient_colors		= FALSE
-    		lightborder_shade       = 1.0
-		lightborderstyle	= 0
-		trough_shades	        = { 1.025, 1.025 }
-		trough_border_shades	= { 1.06, 1.06 }
-		border_shades		= { 1.2, 1.2 }		# slider border outline
-		contrast		= 0.0			# no trough-border
+		roundness = 4
+		border_shades = { 1.3, 1.3 }
+		gradient_shades = { 0.7, 0.7, 0.7, 0.7 }
+		trough_shades = { 1.0, 1.0 }
+		trough_border_shades = { 1.3, 1.3 }
+    		lightborder_shade = 1.0
+		lightborderstyle = 0
 	}
 }
 
