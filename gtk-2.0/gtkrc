@@ -291,7 +291,7 @@ style "menubar" {
 	engine "murrine" {
 		gradient_shades = {1.0, 1.0, 1.0, 1.0}
 		lightborder_shade = 1.0
-		border_shades = { 0.8, 0.8 }
+		border_shades = { 0.6, 0.6 }
 	}
 }
 
@@ -300,7 +300,7 @@ style "toolbar" {
 
 	engine "murrine" {
 		lightborder_shade = 1.0
-		border_shades = { 0.8, 0.8 }
+		border_shades = { 0.6, 0.6 }
 	}
 }
 
