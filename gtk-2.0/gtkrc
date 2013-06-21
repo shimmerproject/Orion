@@ -254,9 +254,9 @@ style "scale" = "button" {
 }
 
 style "notebook_bg" {
-	bg[NORMAL] = shade (1.02, @bg_color)
-	bg[ACTIVE] = shade (0.97, @bg_color)
-	fg[ACTIVE] = mix (0.8, @fg_color, shade (0.97, @bg_color))
+	bg[NORMAL] = @base_color
+	bg[ACTIVE] = shade (0.97, @base_color)
+	fg[ACTIVE] = mix (0.8, @text_color, shade (0.97, @base_color))
 }
 
 # The color is changed by the notebook_bg style, this style
@@ -267,9 +267,7 @@ style "notebook" {
 	
 	engine "murrine" {
 		roundness = 2
-		focusstyle = 2
-		lightborder_shade = 1.16
-		gradient_shades = {1.1, 1.0, 1.0, 0.68}
+		gradient_shades = {1.0, 1.0, 1.0, 1.0}
 	}
 }
 
@@ -322,8 +320,7 @@ style "menu" {
 	bg[NORMAL] = @bg_color
 #	fg[INSENSITIVE]   = shade (0.8, "#4D4C48")
 
-	engine "murrine"
-	{
+	engine "murrine" {
 		reliefstyle = 0
 		roundness = 0
 	}
@@ -335,8 +332,7 @@ style "menu_item" = "menu" {
 
 	fg[PRELIGHT] = @selected_fg_color
 
-	engine "murrine"
-	{
+	engine "murrine" {
 		glowstyle = 5
 		glow_shade = 1.1
 #		lightborder_shade = 1.0
@@ -411,8 +407,7 @@ style "frame_title" {
 }
 
 style "treeview" {
-	engine "murrine"
-	{
+	engine "murrine" {
 		roundness = 2
 		lightborder_shade = 1.1
 		gradient_shades = {1.04, 1.0, 1.0, 0.96}
@@ -526,8 +521,8 @@ style "xfdesktop-icon-view"
 	XfdesktopIconView::selected-label-alpha = 60
 	fg[NORMAL] = shade (0.9, @selected_fg_color)
 	fg[ACTIVE] = @selected_fg_color
-	engine "murrine"
-	{
+
+	engine "murrine" {
 		textstyle = 5
 		text_shade = 0.05
 	}
@@ -543,8 +538,7 @@ style "xfsm-logout"
 	fg[SELECTED]	= @tooltip_fg_color
 	fg[INSENSITIVE] = shade (0.7, @tooltip_fg_color)
 
-	engine "murrine"
-        {
+	engine "murrine" {
 		contrast            = 1.2
 		highlight_shade     = 1.00
 		lightborder_shade   = 1.95  
@@ -565,8 +559,7 @@ style "xfwm-tabwin"
 	fg[NORMAL]	= shade (0.8, @tooltip_fg_color)
 	base[SELECTED]	= shade (0.8, @tooltip_fg_color)
 
-	engine "murrine"
-	{
+	engine "murrine" {
 		focusstyle = 0
 	}
 }
