@@ -324,7 +324,7 @@ style "menu" {
 
 style "menu_item" = "menu" {
 	xthickness = 2
-	ythickness = 3
+	ythickness = 2
 
 	fg[PRELIGHT] = @selected_fg_color
 
@@ -338,8 +338,8 @@ style "menu_item" = "menu" {
 }
 
 style "menubar_item" = "menu" {
-	xthickness = 2
-	ythickness = 2
+	xthickness = 3
+	ythickness = 3
 
 	bg[PRELIGHT] = shade (0.9, @bg_color)
 	fg[PRELIGHT] = @fg_color
