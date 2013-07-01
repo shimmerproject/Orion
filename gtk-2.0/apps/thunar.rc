@@ -1,18 +1,19 @@
 style "sidepane" {
-	base[NORMAL]		= @bg_color
-	base[ACTIVE]		= @selected_bg_color
-	base[INSENSITIVE]	= @bg_color
+	base[NORMAL] = @bg_color
+	base[ACTIVE] = @selected_bg_color
+	base[INSENSITIVE] = @bg_color
 	
-	text[ACTIVE]		= @selected_fg_color
-	bg[NORMAL]		= @bg_color
-	bg[PRELIGHT]		= shade (1.5,@selected_bg_color)
+	text[ACTIVE] = @selected_fg_color
+
+	bg[NORMAL] = @bg_color
+	bg[PRELIGHT] = shade (1.5,@selected_bg_color)
 }
 
 
-widget_class "*ThunarShortcutsView*"		style "sidepane"
-widget_class "*ThunarTreeView*"			style "sidepane"
-widget_class "*ThunarLocationEntry*"		style "entry"
+widget_class "*ThunarShortcutsView*" style "sidepane"
+widget_class "*ThunarTreeView*" style "sidepane"
+widget_class "*ThunarLocationEntry*" style "entry"
 
 # Gtk2 Open-File Dialog
-widget_class "*GtkFileChooserWidget.GtkFileChooserDefault.GtkVBox.GtkHPaned.GtkVBox.GtkScrolledWindow.GtkTreeView*"	style "sidepane"
-widget_class "*GtkFileChooserWidget.GtkFileChooserDefault.GtkVBox.GtkHPaned.GtkVBox.GtkScrolledWindow.<GtkTreeView>.<GtkButton>"	style "treeview_header"
+widget_class "*GtkFileChooserWidget.GtkFileChooserDefault.GtkVBox.GtkHPaned.GtkVBox.GtkScrolledWindow.GtkTreeView*" style "sidepane"
+widget_class "*GtkFileChooserWidget.GtkFileChooserDefault.GtkVBox.GtkHPaned.GtkVBox.GtkScrolledWindow.<GtkTreeView>.<GtkButton>" style "treeview_header"
