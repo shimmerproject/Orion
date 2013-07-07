@@ -1,6 +1,6 @@
 /* XPM */
 static char * hide_active_xpm[] = {
-"23 23 50 1",
+"23 18 50 1",
 " 	c None",
 ".	c #DCE0E2",
 "+	c #B7BABC",
@@ -51,11 +51,6 @@ static char * hide_active_xpm[] = {
 "i	c #EDEEEE",
 "j	c #EEEEEE",
 "k	c #E4E7E8",
-"                       ",
-"                       ",
-"                       ",
-"                       ",
-"                       ",
 "                       ",
 ".+@#################@+.",
 "$%&*****************&%=",

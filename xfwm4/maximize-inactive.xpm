@@ -1,6 +1,6 @@
 /* XPM */
 static char * maximize_inactive_xpm[] = {
-"23 23 39 1",
+"23 18 39 1",
 " 	c None",
 ".	c #DFDFDF",
 "+	c #BABABA",
@@ -40,11 +40,6 @@ static char * maximize_inactive_xpm[] = {
 "8	c #E6E6E6",
 "9	c #EDEDED",
 "0	c #EEEEEE",
-"                       ",
-"                       ",
-"                       ",
-"                       ",
-"                       ",
 "                       ",
 ".+@#################@+.",
 "$%&*****************&%=",

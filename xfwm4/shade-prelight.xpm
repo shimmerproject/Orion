@@ -1,6 +1,6 @@
 /* XPM */
 static char * shade_prelight_xpm[] = {
-"23 23 48 1",
+"23 18 48 1",
 " 	c None",
 ".	c #DCEFEF",
 "+	c #B7B7B7",
@@ -49,11 +49,6 @@ static char * shade_prelight_xpm[] = {
 "g	c #E4EEEE",
 "h	c #EDEEEE",
 "i	c #EEEEEE",
-"                       ",
-"                       ",
-"                       ",
-"                       ",
-"                       ",
 "                       ",
 ".+@#################@+.",
 "$%&*****************&%=",

@@ -1,6 +1,6 @@
 /* XPM */
 static char * hide_prelight_xpm[] = {
-"23 23 43 1",
+"23 18 43 1",
 " 	c None",
 ".	c #DCEFEF",
 "+	c #B7B7B7",
@@ -44,11 +44,6 @@ static char * hide_prelight_xpm[] = {
 "b	c #EDEEEE",
 "c	c #EEEEEE",
 "d	c #E4EEEE",
-"                       ",
-"                       ",
-"                       ",
-"                       ",
-"                       ",
 "                       ",
 ".+@#################@+.",
 "$%&*****************&%=",

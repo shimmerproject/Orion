@@ -1,6 +1,6 @@
 /* XPM */
 static char * shade_toggled_inactive_xpm[] = {
-"23 23 38 1",
+"23 18 38 1",
 " 	c None",
 ".	c #DFDFDF",
 "+	c #BABABA",
@@ -39,11 +39,6 @@ static char * shade_toggled_inactive_xpm[] = {
 "7	c #E6E6E6",
 "8	c #EDEDED",
 "9	c #EEEEEE",
-"                       ",
-"                       ",
-"                       ",
-"                       ",
-"                       ",
 "                       ",
 ".+@#################@+.",
 "$%&*****************&%=",
