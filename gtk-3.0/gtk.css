@@ -61,6 +61,8 @@
 @define-color wm_title_unfocused mix(@theme_fg_color, @theme_bg_color, 0.6);
 @define-color wm_border_focused shade(@theme_bg_color, 0.7);
 @define-color wm_border_unfocused shade(@theme_bg_color, 0.8);
+@define-color wm_highlight_focused shade(@theme_bg_color, 1.05);
+@define-color wm_highlight_unfocused shade(@theme_bg_color, 1.02);
 
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-assets.css");
