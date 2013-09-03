@@ -1,6 +1,6 @@
 /* XPM */
 static char * menu_active_xpm[] = {
-"23 18 48 1",
+"23 16 48 1",
 " 	c None",
 ".	c #DCE0E2",
 "+	c #B7BABC",
@@ -49,8 +49,7 @@ static char * menu_active_xpm[] = {
 "g	c #EDEEEE",
 "h	c #EEEEEE",
 "i	c #E4E7E8",
-"                       ",
-".+@#################@+.",
+" +@#################@+ ",
 "$%&*****************&%=",
 "-;>,,,,,,,,,,,,,,,,,>')",
 "!~~~~~~~~~~~~~~~~~~~~~!",
@@ -65,5 +64,4 @@ static char * menu_active_xpm[] = {
 "|111111111111111111111|",
 "/2333333333333333333345",
 "67822222222222222222879",
-"0abcccccccccccccccccbad",
-"efghhhhhhhhhhhhhhhhhgfi"};
+" abcccccccccccccccccba "};
