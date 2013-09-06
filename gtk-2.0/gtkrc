@@ -145,7 +145,7 @@ style "vscale" {
 style "hscale" {
 }
 
-style "button" = "wide" {
+style "button" = "wider" {
 	bg[NORMAL] = @bg_color
 	bg[PRELIGHT] = shade (1.04, @bg_color)
 	bg[ACTIVE] = shade (0.9, @bg_color)
