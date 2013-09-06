@@ -76,7 +76,7 @@
 	<border name="button_border" left="0" right="0" top="0" bottom="0" />
 </frame_geometry>
 
-<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="2" rounded_top_right="2" rounded_bottom_right="false" rounded_bottom_left="false""2" parent="small">
+<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="2" rounded_top_right="2" rounded_bottom_right="false" rounded_bottom_left="false" parent="small">
 </frame_geometry>
 
 <frame_geometry name="attached" title_scale="small" hide_buttons="true" rounded_top_left="2" rounded_top_right="2" parent="small">
