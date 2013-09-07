@@ -1,6 +1,6 @@
 /* XPM */
 static char * shade_prelight_xpm[] = {
-"23 18 48 1",
+"23 16 48 1",
 " 	c None",
 ".	c #DCEFEF",
 "+	c #B7B7B7",
@@ -49,8 +49,7 @@ static char * shade_prelight_xpm[] = {
 "g	c #E4EEEE",
 "h	c #EDEEEE",
 "i	c #EEEEEE",
-"                       ",
-".+@#################@+.",
+" +@#################@+ ",
 "$%&*****************&%=",
 "-;>,,,,,,,,,,,,,,,,,>')",
 "#!!!!!!!!!!!!!!!!!!!!!#",
@@ -65,5 +64,4 @@ static char * shade_prelight_xpm[] = {
 "67777777777777777777776",
 "(899999999999999999998{",
 "+0a88888888888888888a0b",
-"cd#eeeeeeeeeeeeeeeee#df",
-"g*hiiiiiiiiiiiiiiiiih*g"};
+" d#eeeeeeeeeeeeeeeee#d "};
