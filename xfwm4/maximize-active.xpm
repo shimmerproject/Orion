@@ -1,6 +1,6 @@
 /* XPM */
 static char * maximize_active_xpm[] = {
-"23 18 52 1",
+"23 16 52 1",
 " 	c None",
 ".	c #DCE0E2",
 "+	c #B7BABC",
@@ -53,8 +53,7 @@ static char * maximize_active_xpm[] = {
 "k	c #E6E8E9",
 "l	c #EDEEEE",
 "m	c #EEEEEE",
-"                       ",
-".+@#################@+.",
+" +@#################@+ ",
 "$%&*****************&%=",
 "-;>,,,,,,,,,,,,,,,,,>')",
 "!~~~~~~~~~~~~~~~~~~~~~!",
@@ -69,5 +68,4 @@ static char * maximize_active_xpm[] = {
 "56666666666666666666665",
 "(7888888888888888888890",
 "abc77777777777777777cbd",
-"efghhhhhhhhhhhhhhhhhgfi",
-"jklmmmmmmmmmmmmmmmmmlkj"};
+" fghhhhhhhhhhhhhhhhhgf "};

@@ -1,6 +1,6 @@
 /* XPM */
 static char * shade_toggled_pressed_xpm[] = {
-"23 18 53 1",
+"23 16 53 1",
 " 	c None",
 ".	c #DCE0E2",
 "+	c #B7BABC",
@@ -54,8 +54,7 @@ static char * shade_toggled_pressed_xpm[] = {
 "l	c #E6E8E9",
 "m	c #EDEEEE",
 "n	c #EEEEEE",
-"                       ",
-".+@#################@+.",
+" +@#################@+ ",
 "$%&*****************&%=",
 "-;>,,,,,,,,,,,,,,,,,>')",
 "!~~~~~~~~~~~~~~~~~~~~~!",
@@ -70,5 +69,4 @@ static char * shade_toggled_pressed_xpm[] = {
 "67777777777777777777776",
 "(899999999999999999990a",
 "bcd88888888888888888dce",
-"fghiiiiiiiiiiiiiiiiihgj",
-"klmnnnnnnnnnnnnnnnnnmlk"};
+" ghiiiiiiiiiiiiiiiiihg "};
