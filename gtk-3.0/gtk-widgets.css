@@ -636,16 +636,16 @@ GtkInfoBar {
 
 .info .button.close:hover {
     background-image: linear-gradient(to bottom,
-				      alpha(white, 0.3),
-				      alpha(white, 0.2) 30%,
-				      alpha(black, 0.02));
+                                      alpha(white, 0.3),
+                                      alpha(white, 0.2) 30%,
+                                      alpha(black, 0.02));
 }
 
 .info .button.close:active {
     color: @info_fg_color;
     background-image: linear-gradient(to bottom,
-				      alpha(black, 0.1),
-				      transparent);
+                                      alpha(black, 0.1),
+                                      transparent);
 }
 
 .warning {
@@ -665,16 +665,16 @@ GtkInfoBar {
 
 .warning .button.close:hover {
     background-image: linear-gradient(to bottom,
-				      alpha(white, 0.3),
-				      alpha(white, 0.2) 30%,
-				      alpha(black, 0.02));
+                                      alpha(white, 0.3),
+                                      alpha(white, 0.2) 30%,
+                                      alpha(black, 0.02));
 }
 
 .warning .button.close:active {
     color: @warning_fg_color;
     background-image: linear-gradient(to bottom,
-				      alpha(black, 0.1),
-				      transparent);
+                                      alpha(black, 0.1),
+                                      transparent);
 }
 
 .question {
@@ -694,16 +694,16 @@ GtkInfoBar {
 
 .question .button.close:hover {
     background-image: linear-gradient(to bottom,
-				      alpha(white, 0.3),
-				      alpha(white, 0.2) 30%,
-				      alpha(black, 0.02));
+                                      alpha(white, 0.3),
+                                      alpha(white, 0.2) 30%,
+                                      alpha(black, 0.02));
 }
 
 .question .button.close:active {
     color: @question_fg_color;
     background-image: linear-gradient(to bottom,
-				      alpha(black, 0.1),
-				      transparent);
+                                      alpha(black, 0.1),
+                                      transparent);
 }
 
 .error {
@@ -723,16 +723,16 @@ GtkInfoBar {
 
 .error .button.close:hover {
     background-image: linear-gradient(to bottom,
-				      alpha(white, 0.3),
-				      alpha(white, 0.2) 30%,
-				      alpha(black, 0.02));
+                                      alpha(white, 0.3),
+                                      alpha(white, 0.2) 30%,
+                                      alpha(black, 0.02));
 }
 
 .error .button.close:active {
     color: @error_fg_color;
     background-image: linear-gradient(to bottom,
-				      alpha(black, 0.1),
-				      transparent);
+                                      alpha(black, 0.1),
+                                      transparent);
 }
 
 /*******************
@@ -2153,7 +2153,7 @@ GtkColorButton.button {
 .inline-toolbar.toolbar GtkToolButton .button,
 .inline-toolbar.toolbar GtkToolButton > .button {
     box-shadow: inset -1px 0 shade(@theme_bg_color, 0.9),
-				inset 1px 0 alpha(@light_shadow, 0.30),
+                inset 1px 0 alpha(@light_shadow, 0.30),
                 inset 0 1px alpha(@light_shadow, 0.30),
                 inset 0 -1px alpha(@light_shadow, 0.30);
 }
@@ -2292,7 +2292,7 @@ GtkColorButton.button {
 .inline-toolbar.toolbar.vertical .button,
 .inline-toolbar.toolbar.vertical GtkToolButton > .button {
     box-shadow: inset -1px 0 shade(@theme_bg_color, 0.9),
-				inset 1px 0 alpha(@light_shadow, 0.30),
+                inset 1px 0 alpha(@light_shadow, 0.30),
                 inset 0 1px alpha(@light_shadow, 0.30),
                 inset 0 -1px alpha(@light_shadow, 0.30);
 }
@@ -2408,7 +2408,7 @@ GtkColorButton.button {
 .header-bar .button.raised.linked,
 .header-bar .raised.linked .button {
     box-shadow: inset -1px 0 shade(@toolbar_bg_color, 0.9),
-				inset 1px 0 alpha(@light_shadow, 0.30),
+                inset 1px 0 alpha(@light_shadow, 0.30),
                 inset 0 1px alpha(@light_shadow, 0.30),
                 inset 0 -1px alpha(@light_shadow, 0.30);
 }
