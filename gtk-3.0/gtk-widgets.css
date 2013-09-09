@@ -3089,3 +3089,85 @@ GtkBubbleWindow.osd.background {
 GtkBubbleWindow .toolbar {
     background-color: transparent;
 }
+
+/*******
+ * CSD *
+ *******/
+.titlebar {
+    border-radius: 2px 2px 0 0;
+    background-image: -gtk-gradient(linear, left top, left bottom,
+                                     from (@wm_bg_a),
+                                     to (@wm_bg_b));
+    text-shadow: none;
+}
+
+/* this is the default titlebar that is added by GTK
+ * when client-side decorations are in use and the application
+ * did not set a custom titlebar.
+ */
+.titlebar.default-decoration {
+    border: none;
+    box-shadow: none;
+}
+
+.titlebar .title {
+    font: bold;
+}
+
+.titlebar:backdrop {
+    background-image: -gtk-gradient(linear, left top, left bottom,
+                                     from (shade(@wm_bg_a, 0.99)),
+                                     to (@wm_bg_b));
+    text-shadow: none;
+}
+
+.titlebar .titlebutton {
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 2px;
+    padding: 5px 5px 6px 5px;
+    background: none;
+    color: @wm_title_focused;
+}
+
+.titlebar .titlebutton:hover {
+    background: none;
+}
+
+.titlebar .titlebutton:active {
+    background: none;
+}
+
+.titlebar .right .titlebutton:first-child {
+}
+
+.titlebar .right .titlebutton:last-child {
+}
+
+.titlebar .left .titlebutton:last-child {
+}
+
+.titlebar .left .titlebutton:first-child {
+}
+
+.titlebar .titlebutton:backdrop {
+    background-image: none;
+    color: @wm_title_unfocused;
+}
+
+.window-frame {
+    border-width: 1px;
+    border-style: solid;
+    border-color: @wm_border_focused;
+    border-radius: 2px 2px 0 0;
+    box-shadow: 0 2px 8px 3px alpha(black, 0.7);
+
+    /* this is used for the resize cursor area */
+    margin: 10px;
+}
+
+.window-frame:backdrop {
+    border-color: @wm_border_unfocused;
+    box-shadow: 0 2px 5px 1px alpha(black, 0.7);
+}
