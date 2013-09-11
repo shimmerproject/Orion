@@ -1916,7 +1916,7 @@ GtkColorButton.button {
  * header-bar *
  **************/
 .header-bar {
-    padding: 2px;
+    padding: 4px;
     border-width: 0 0 1px;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.8);
@@ -1924,11 +1924,11 @@ GtkColorButton.button {
 }
 
 .header-bar .button.text-button {
-    padding: 2px 4px;
+    padding: 4px;
 }
 
 .header-bar .button.image-button {
-    padding: 4px 3px 3px 4px;
+    padding: 6px;
 }
 
 .header-bar .title {
@@ -1943,7 +1943,7 @@ GtkColorButton.button {
  * toolbar *
  ***********/
 .toolbar {
-    padding: 2px;
+    padding: 4px;
     border-style: none;
     background-color: @toolbar_bg_color;
     background-image: none;
@@ -3166,21 +3166,23 @@ GtkBubbleWindow .toolbar {
 }
 
 .titlebar .titlebutton {
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
-    border-radius: 2px;
-    padding: 5px 5px 6px 5px;
+    padding: 4px;
+    border-style: none;
     background: none;
     color: @wm_title_focused;
 }
 
-.titlebar .titlebutton:hover {
+.titlebar .titlebutton:hover,
+.titlebar .titlebutton:hover:focus {
     background: none;
+    color: shade(@wm_title_focused, 0.8);
 }
 
-.titlebar .titlebutton:active {
+.titlebar .titlebutton:active,
+.titlebar .titlebutton:active:hover {
     background: none;
+    color: shade(@wm_title_focused, 0.7);
+    box-shadow: none;
 }
 
 /*
@@ -3205,17 +3207,16 @@ GtkBubbleWindow .toolbar {
 }
 
 .window-frame {
-    border-width: 1px;
-    border-style: solid;
-    border-color: @wm_border_focused;
+    border-style: none;
     border-radius: 2px 2px 0 0;
-    box-shadow: 0 2px 8px 3px alpha(black, 0.7);
+    box-shadow: 0 0 0 1px alpha(black, 0.2),
+                0 3px 7px alpha(black, 0.7);
 
     /* this is used for the resize cursor area */
     margin: 10px;
 }
 
 .window-frame:backdrop {
-    border-color: @wm_border_unfocused;
-    box-shadow: 0 2px 5px 1px alpha(black, 0.7);
+    box-shadow: 0 0 0 1px alpha(black, 0.2),
+                0 3px 5px alpha(black, 0.5);
 }
