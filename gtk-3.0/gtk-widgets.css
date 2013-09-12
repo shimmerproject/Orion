@@ -3138,6 +3138,7 @@ GtkBubbleWindow .toolbar {
     background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (@wm_bg_a),
                                      to (@wm_bg_b));
+
     text-shadow: none;
 }
 
@@ -3158,6 +3159,7 @@ GtkBubbleWindow .toolbar {
     background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (shade(@wm_bg_a, 0.99)),
                                      to (@wm_bg_b));
+
     text-shadow: none;
 }
 
@@ -3183,14 +3185,14 @@ GtkBubbleWindow .toolbar {
 
 /*
 .titlebar .right .titlebutton:first-child {
-    border-left: 1px solid shade(@theme_bg_color, 0.9);
+    border-left: 1px solid shade(@wm_bg_a, 0.9);
 }
 
 .titlebar .right .titlebutton:last-child {
 }
 
 .titlebar .left .titlebutton:last-child {
-    border-right: 1px solid shade(@theme_bg_color, 0.9);
+    border-right: 1px solid shade(@wm_bg_a, 0.9);
 }
 
 .titlebar .left .titlebutton:first-child {
