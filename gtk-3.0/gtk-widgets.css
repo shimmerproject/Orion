@@ -904,7 +904,7 @@ GtkComboBox .menu {
 
 .menubar.menuitem:hover,
 .menubar .menuitem:hover {
-    border-color: shade(@theme_bg_color, 0.8);
+    border-color: shade(@menubar_bg_color, 0.8);
     background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (shade(shade(@menubar_bg_color, 1.02), 0.9)),
                                      to (shade(shade(@menubar_bg_color, 1.02), 0.95)));
