@@ -6,7 +6,10 @@ XfceHeading {
 }
 
 .xfce4-panel {
-    background-color: @panel_bg_color;
+    background-image: linear-gradient(to bottom,
+                                      shade(@panel_bg_color, 1.1),
+                                      shade(@panel_bg_color, 0.9)
+                                      );
 }
 
 .xfce4-panel .button {
@@ -19,17 +22,19 @@ XfceHeading {
     border-width: 0 1px;
     border-radius: 0;
     border-color: shade(@panel_bg_color, 0.8);
-    background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(shade(@panel_bg_color, 1.02), 0.9)),
-                                     to (shade(shade(@panel_bg_color, 1.02), 0.95)));
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@panel_bg_color, 1.02), 0.9),
+                                      shade(shade(@panel_bg_color, 1.02), 0.95)
+                                      );
 }
 
 .xfce4-panel .button:hover,
 .xfce4-panel .button:active:hover {
     border-color: shade(@panel_bg_color, 0.8);
-    background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(shade(@panel_bg_color, 1.02), 1.0)),
-                                     to (shade(shade(@panel_bg_color, 1.02), 1.05)));
+    background-image: linear-gradient(to bottom,
+                                      shade(shade(@panel_bg_color, 1.02), 1.0),
+                                      shade(shade(@panel_bg_color, 1.02), 1.05)
+                                      );
 }
 
 /* menu-styling, e.g. for indicators */
@@ -42,9 +47,10 @@ XfceHeading {
 
 .xfce4-panel .menu *:hover {
     border-color: shade(@theme_selected_bg_color, 0.9);
-    background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(@theme_selected_bg_color, 1.1)),
-                                     to (shade(@theme_selected_bg_color, 0.9)));
+    background-image: linear-gradient(to bottom,
+                                      shade(@theme_selected_bg_color, 1.1),
+                                      shade(@theme_selected_bg_color, 0.9)
+                                      );
 
     color: @theme_selected_fg_color;
 }
