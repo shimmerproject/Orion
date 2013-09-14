@@ -615,7 +615,10 @@ widget_class "*<GtkNotebook>*<GtkDrawingArea>" style "notebook_bg"
 widget_class "*<GtkNotebook>*<GtkLayout>" style "notebook_bg"
 widget_class "*<GtkNotebook>*<GtkLabel>" style "notebook_bg"
 
-widget_class "*<GtkToolbar>*" style "toolbar"
+class "GtkToolbar" style "toolbar"
+class "GtkHandleBox" style "toolbar"
+widget_class "*Toolbar*.*Separator*" style "toolbar"
+
 widget_class "*<GtkScrolledWindow>*" style "scrolledwindow"
 
 widget_class "*<GtkButton>" style "button"
