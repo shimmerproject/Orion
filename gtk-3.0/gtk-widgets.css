@@ -1497,7 +1497,7 @@ OsScrollbar:insensitive {
 .primary-toolbar .separator:insensitive,
 .toolbar GtkSeparatorToolItem,
 .toolbar .separator,
-.toolbar .separator:insensitive
+.toolbar .separator:insensitive,
 .header-bar GtkSeparatorToolItem,
 .header-bar .separator,
 .header-bar .separator:insensitive {
@@ -2950,7 +2950,6 @@ GtkOverlay.osd {
 }
 
 .osd .scale.slider {
-    border-radius: 7px;
     background-color: shade(@osd_bg, 1.04);
     background-image: none;
     /* we will draw the border using box shadow for now */

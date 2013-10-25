@@ -9,13 +9,12 @@
 </info>
 
 <!-- ::: CONSTANTS ::: -->
-<constant name="C_titlebar" value="gtk:bg[NORMAL]" />
-<constant name="C_border_focused" value="shade/gtk:bg[NORMAL]/0.7" />
-<constant name="C_border_unfocused" value="shade/gtk:bg[NORMAL]/0.8" />
-<constant name="C_title_focused" value="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.1" />
-<constant name="C_title_unfocused" value="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.6" />
-<constant name="C_highlight_focused" value="shade/gtk:bg[NORMAL]/1.05" />
-<constant name="C_highlight_unfocused" value="shade/gtk:bg[NORMAL]/1.02" />
+<constant name="C_titlebar_gradient_a" value="gtk:custom(wm_bg_a,shade/gtk:bg[NORMAL]/1.05)" />
+<constant name="C_titlebar_gradient_b" value="gtk:custom(wm_bg_b,gtk:bg[NORMAL])" />
+<constant name="C_border_focused" value="gtk:custom(wm_border_focused,shade/gtk:bg[NORMAL]/0.7)" />
+<constant name="C_border_unfocused" value="gtk:custom(wm_border_unfocused,shade/gtk:bg[NORMAL]/0.8)" />
+<constant name="C_title_focused" value="gtk:custom(wm_title_focused,blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.1)" />
+<constant name="C_title_unfocused" value="gtk:custom(wm_title_unfocused,blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.6)" />
 
 <!-- ::: GEOMETRY ::: -->
 <frame_geometry name="normal" title_scale="medium" rounded_top_left="2" rounded_top_right="2">
@@ -24,7 +23,7 @@
 	<distance name="bottom_height" value="1" />
 	<distance name="left_titlebar_edge" value="4" />
 	<distance name="right_titlebar_edge" value="4" />
-	<distance name="title_vertical_pad" value="2" />
+	<distance name="title_vertical_pad" value="4" />
 	<aspect_ratio name="button" value="1.0" />
 	<border name="title_border" left="8" right="8" top="4" bottom="4" />
 	<border name="button_border" left="0" right="0" top="0" bottom="0" />
@@ -47,7 +46,7 @@
 </frame_geometry>
 
 <frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="false" rounded_top_right="false">
-	<distance name="title_vertical_pad" value="2" />
+	<distance name="title_vertical_pad" value="4" />
 	<border name="title_border" left="8" right="8" top="4" bottom="4" />
 	<border name="button_border" left="0" right="0" top="0" bottom="0"  />
 </frame_geometry>
@@ -98,7 +97,7 @@
 
 <!-- ::: WINDOW DECORATIONS ::: -->
 <draw_ops name="entire_background_focused">
-	<rectangle color="C_titlebar" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_titlebar_gradient_b" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="entire_background_unfocused">
@@ -107,8 +106,8 @@
 
 <draw_ops name="titlebar_fill_focused">
 	<gradient type="vertical" x="0" y="0" width="width" height="title_height">
-	<color value="C_highlight_focused" />
-	<color value="C_titlebar" />
+	<color value="C_titlebar_gradient_a" />
+	<color value="C_titlebar_gradient_b" />
 	</gradient>
 </draw_ops>
 
@@ -118,8 +117,8 @@
 
 <draw_ops name="titlebar_fill_unfocused">
 	<gradient type="vertical" x="0" y="0" width="width" height="title_height">
-	<color value="C_highlight_unfocused" />
-	<color value="C_titlebar" />
+	<color value="C_titlebar_gradient_a" />
+	<color value="C_titlebar_gradient_b" />
 	</gradient>
 </draw_ops>
 
