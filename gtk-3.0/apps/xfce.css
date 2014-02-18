@@ -4,3 +4,7 @@ XfceHeading {
     padding: 0;
     border-width: 0;
 }
+
+.xfce4-panel .menu {
+    -gtk-image-effect: none;
+}
