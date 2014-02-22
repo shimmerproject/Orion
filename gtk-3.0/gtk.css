@@ -37,6 +37,8 @@
 @define-color error_color #cc0000;
 
 /* widget colors */
+@define-color titlebar_bg_color @theme_bg_color;
+@define-color titlebar_fg_color @theme_fg_color;
 @define-color menubar_bg_color @theme_bg_color;
 @define-color menubar_fg_color @theme_fg_color;
 @define-color toolbar_bg_color @theme_bg_color;
@@ -55,17 +57,13 @@
 @define-color lightdm_bg_color @theme_base_color;
 @define-color lightdm_fg_color @theme_text_color;
 
-/* backdrop colors */
-@define-color backdrop_selected_bg_color shade (@theme_bg_color, 0.9);
-@define-color backdrop_selected_fg_color @theme_fg_color;
-
 /* window manager colors */
-@define-color wm_bg_a shade(@theme_bg_color, 1.05);
-@define-color wm_bg_b @theme_bg_color;
-@define-color wm_title_focused mix(@theme_fg_color, @theme_bg_color, 0.1);
-@define-color wm_title_unfocused mix(@theme_fg_color, @theme_bg_color, 0.6);
-@define-color wm_border_focused shade(@theme_bg_color, 0.7);
-@define-color wm_border_unfocused shade(@theme_bg_color, 0.8);
+@define-color wm_bg_a shade(@titlebar_bg_color, 1.05);
+@define-color wm_bg_b @titlebar_bg_color;
+@define-color wm_border_focused shade(@titlebar_bg_color, 0.7);
+@define-color wm_border_unfocused shade(@titlebar_bg_color, 0.8);
+@define-color wm_title_focused mix(@titlebar_fg_color, @titlebar_bg_color, 0.1);
+@define-color wm_title_unfocused mix(@titlebar_fg_color, @titlebar_bg_color, 0.6);
 
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-assets.css");
