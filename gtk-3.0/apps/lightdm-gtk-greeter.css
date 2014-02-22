@@ -52,7 +52,7 @@
 #shutdown_dialog,
 #restart_dialog {
     border-style: none;
-    border-radius: 5px;
+    border-radius: 3px;
     background-image: linear-gradient(to bottom,
                                       shade(@lightdm_bg_color, 1.12),
                                       shade(@lightdm_bg_color, 1.02) 10%,
@@ -119,7 +119,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: shade(@lightdm_bg_color, 0.8);
-    border-radius: 3px;
+    border-radius: 2px;
     background-image: linear-gradient(to bottom,
                                       shade(@lightdm_bg_color, 0.95),
                                       shade(@lightdm_bg_color, 0.97) 30%,
@@ -147,7 +147,7 @@
     padding: 3px 15px;
     border-width: 1px;
     border-color: shade(@lightdm_bg_color, 0.8);
-    border-radius: 3px;
+    border-radius: 2px;
     background-image: linear-gradient(to bottom,
                                       shade(@lightdm_bg_color, 1.02),
                                       shade(@lightdm_bg_color, 0.95) 90%,
@@ -178,7 +178,7 @@
 
 #user_image {
     padding: 3px;
-    border-radius: 3px;
+    border-radius: 2px;
 
     /* draw border using box-shadow */
     box-shadow: inset 1px 0 shade(@lightdm_bg_color, 0.8),
@@ -188,7 +188,7 @@
 }
 
 #user_image_border {
-    border-radius: 3px;
+    border-radius: 2px;
     background-image: linear-gradient(to bottom,
                                       shade(@lightdm_bg_color, 0.90),
                                       shade(@lightdm_bg_color, 0.98) 10%,
@@ -204,8 +204,8 @@
     padding-top: 10px;
     padding-bottom: 0;
     border-style: none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     background-color: transparent;
     background-image: none;
     box-shadow: none;
