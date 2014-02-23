@@ -1664,12 +1664,12 @@ OsScrollbar:insensitive {
 
 .button .separator,
 .button.separator {
-    border-color: shade(@theme_bg_color, 0.9);
+    border-color: shade(@theme_bg_color, 0.95);
 }
 
 .button .separator:insensitive,
 .button.separator:insensitive {
-    border-color: transparent;
+    border-color: shade(@theme_bg_color, 0.85);
 }
 
 .primary-toolbar GtkSeparatorToolItem,
@@ -1680,8 +1680,8 @@ OsScrollbar:insensitive {
 .toolbar .separator:insensitive {
     -GtkWidget-window-dragging: true;
 
-    border-color: transparent;
-    color: transparent;
+    border-color: shade(@toolbar_bg_color, 0.95);
+    color: shade(@toolbar_bg_color, 0.95);
 }
 
 .header-bar GtkSeparatorToolItem,
@@ -1692,36 +1692,36 @@ OsScrollbar:insensitive {
 .titlebar .separator:insensitive {
     -GtkWidget-window-dragging: true;
 
-    border-color: transparent;
-    color: transparent;
+    border-color: shade(@titlebar_bg_color, 0.95);
+    color: shade(@titlebar_bg_color, 0.95);
 }
 
 .primary-toolbar .button .separator,
 .primary-toolbar .button.separator,
 .toolbar .button .separator,
 .toolbar .button.separator {
-    border-color: transparent;
+    border-color: shade(@toolbar_bg_color, 0.95);
 }
 
 .header-bar .button .separator,
 .header-bar .button.separator,
 .titlebar .button .separator,
 .titlebar .button.separator {
-    border-color: transparent;
+    border-color: shade(@titlebar_bg_color, 0.95);
 }
 
 .primary-toolbar .button .separator:insensitive,
 .primary-toolbar .button.separator:insensitive,
 .toolbar .button .separator:insensitive,
 .toolbar .button.separator:insensitive {
-    border-color: transparent;
+    border-color: shade(@toolbar_bg_color, 0.85);
 }
 
 .header-bar .button .separator:insensitive,
 .header-bar .button.separator:insensitive,
 .titlebar .button .separator:insensitive,
 .titlebar .button.separator:insensitive {
-    border-color: transparent;
+    border-color: shade(@titlebar_bg_color, 0.85);
 }
 
 .menuitem.separator {
