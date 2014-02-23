@@ -3675,10 +3675,11 @@ GtkBubbleWindow .toolbar {
 .titlebar {
     border-radius: 2px 2px 0 0;
     background-image: linear-gradient(to bottom,
-                                      @wm_bg_a,
-                                      @wm_bg_b
+                                      shade(@titlebar_bg_color, 1.05),
+                                      shade(@titlebar_bg_color, 0.94)
                                       );
 
+    color: @titlebar_fg_color;
     text-shadow: none;
 }
 
@@ -3701,12 +3702,13 @@ GtkBubbleWindow .toolbar {
 
 .titlebar .title {
     font: bold;
+    text-shadow: none;
 }
 
 .titlebar:backdrop {
     background-image: linear-gradient(to bottom,
-                                      shade(@wm_bg_a, 0.99),
-                                      @wm_bg_b
+                                      shade(@titlebar_bg_color, 1.02),
+                                      shade(@titlebar_bg_color, 0.94)
                                       );
 
     text-shadow: none;
@@ -3716,32 +3718,32 @@ GtkBubbleWindow .toolbar {
     padding: 4px;
     border-style: none;
     background: none;
-    color: @wm_title_focused;
+    color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.1);
 }
 
 .titlebar .titlebutton:hover,
 .titlebar .titlebutton:hover:focus {
     background: none;
-    color: shade(@wm_title_focused, 0.8);
+    color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.0);
 }
 
 .titlebar .titlebutton:active,
 .titlebar .titlebutton:active:hover {
     background: none;
-    color: shade(@wm_title_focused, 0.7);
+    color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.0);
     box-shadow: none;
 }
 
 /*
 .titlebar .right .titlebutton:first-child {
-    border-left: 1px solid shade(@wm_bg_a, 0.9);
+    border-left: 1px solid shade(@titlebar_bg_color, 1.02);
 }
 
 .titlebar .right .titlebutton:last-child {
 }
 
 .titlebar .left .titlebutton:last-child {
-    border-right: 1px solid shade(@wm_bg_a, 0.9);
+    border-right: 1px solid shade(@titlebar_bg_color, 1.02);
 }
 
 .titlebar .left .titlebutton:first-child {
@@ -3750,7 +3752,7 @@ GtkBubbleWindow .toolbar {
 
 .titlebar .titlebutton:backdrop {
     background-image: none;
-    color: @wm_title_unfocused;
+    color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.6);
 }
 
 .window-frame {
