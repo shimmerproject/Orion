@@ -3719,6 +3719,7 @@ GtkBubbleWindow .toolbar {
     border-style: none;
     background: none;
     color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.1);
+    box-shadow: none;
 }
 
 .titlebar .titlebutton:hover,
