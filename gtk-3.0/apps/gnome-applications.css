@@ -97,10 +97,6 @@ WnckPager, WnckTasklist {
 /************
  * nautilus *
  ************/
-.nautilus-canvas-item {
-    border-radius: 2px;
-}
-
 .nautilus-desktop.nautilus-canvas-item {
     color: white;
     text-shadow: 1px 1px black;
@@ -200,7 +196,7 @@ TerminalWindow .scrollbar.button:active:hover {
 /*********
  * gedit *
  *********/
-GeditWindow .pane-separator, 
+GeditWindow .pane-separator,
 GeditWindow .pane-separator:hover {
     border-width: 0 1px 1px 1px;
     border-style: solid;
